@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Emoji Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container animate__animated animate__fadeIn">
+        <h1 class="title animate__animated animate__bounceInDown">Emoji Generator</h1>
+        <div class="emoji-container">
+            <div id="emoji" class="emoji animate__animated">😀</div>
+            <p id="emoji-name" class="emoji-name animate__animated">Choose Your Mood!</p>
+        </div>
+        <div class="mood-meter">
+            <div class="mood-bar"></div>
+        </div>
+        <div class="feeling-buttons animate__animated animate__fadeInUp">
+            <button class="btn feeling-button" data-feeling="Happy">
+                <span class="btn-content">Happy</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Sad">
+                <span class="btn-content">Sad</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Angry">
+                <span class="btn-content">Angry</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Excited">
+                <span class="btn-content">Excited</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Love">
+                <span class="btn-content">Love</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Surprised">
+                <span class="btn-content">Surprised</span>
+            </button>
+            <button class="btn feeling-button" data-feeling="Sleepy">
+                <span class="btn-content">Sleepy</span>
+            </button>
+        </div>
+        <button id="generate-random-btn" class="btn generate-random-button animate__animated animate__bounceInUp">
+            <span class="btn-content">Random Mood</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
